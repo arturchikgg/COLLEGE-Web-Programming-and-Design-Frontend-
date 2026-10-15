@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+</head>
+
+<body>
+
+    <h1>Портфолио Артура </h1>
+    <p>Студент веб-программирования · Колледж Ала-Тоо</p>
+
+    <hr>
+
+    <nav>
+        <a href="#about">Обо мне</a> |
+        <a href="#skills">Навыки</a> |
+        <a href="#work">Работа</a> |
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+
+        <img src="OIP.webp" alt="Мой аватар" width="300">
+
+        <p>
+            Привет! Я Артур. Я изучаю веб-программирование
+            и создаю своё первое портфолио с помощью HTML.
+        </p>
+
+        <details>
+            <summary>Что я сейчас изучаю?</summary>
+            <p>
+                Я изучаю структуру HTML-страницы, ссылки,
+                изображения, формы и мультимедиа.
+            </p>
+        </details>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+        <h2>Мои навыки</h2>
+
+        <ul>
+            <li>Структура HTML-страницы</li>
+            <li>Изображения и ссылки</li>
+            <li>Формы и мультимедиа</li>
+        </ul>
+
+        <p>
+            Выполнено разделов портфолио:
+            <progress value="3" max="5"></progress>
+            3 из 5
+        </p>
+
+        <p>
+            Самооценка HTML:
+            <meter value="50" min="0" max="100"></meter>
+            50 / 100
+        </p>
+
+        <p>Результат сегодняшней работы: 3 завершённых раздела</p>
+    </section>
+
+    <hr>
+
+    <section id="work">
+        <h2>Моя работа</h2>
+
+        <h3>Краткое представление</h3>
+
+        <p>Послушайте короткий аудиофайл.</p>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+
+        <h3>Предпросмотр портфолио</h3>
+
+        <p>
+            Короткое примерное видео,
+            сохранённое в той же папке портфолио.
+        </p>
+
+        <video width="235" height="130" controls>
+            <source src="video22.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Связаться со мной</h2>
+
+        <p>
+            Это учебная форма. Она пока не отправляет сообщения.
+        </p>
+
+        <form>
+
+            <fieldset>
+                <legend>Ваше сообщение</legend>
+
+                <label for="name">Имя</label><br>
+                <input type="text" id="name" name="name">
+
+                <br><br>
+
+                <label for="email">Электронная почта</label><br>
+                <input type="email" id="email" name="email">
+
+                <br><br>
+
+                <label for="message">Сообщение</label><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="25">
+                </textarea>
+
+                <br><br>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+
+            </fieldset>
+
+        </form>
+    </section>
+
+</body>
+</html>
